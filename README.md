@@ -99,7 +99,7 @@ Each notebook sweeps the fraction of malicious (label-flipping) clients for one 
 
 ## Reproducibility
 
-All experiments fix the random seeds for data partitioning, model initialization, and training. Non-IID comparison, detection-metric, and scalability notebooks run over three seeds and report the mean and standard deviation. The IID and Non-IID settings follow the hyperparameters described in the paper: Adam optimizer, learning rate 0.001, batch size 32, 5 local epochs per round, 15 communication rounds for the IID configuration and 30 for the Non-IID configuration. The Non-IID partitioning uses the shard-based scheme described in the paper (100 label-sorted shards distributed unevenly across K = 5 edge nodes).
+All experiments fix the random seeds for data partitioning, model initialization, and training. Non-IID comparison, detection-metric, and scalability notebooks. The IID and Non-IID settings follow the hyperparameters described in the paper: Adam optimizer, learning rate 0.001, batch size 32, 5 local epochs per round, 15 communication rounds for the IID configuration and 30 for the Non-IID configuration. The Non-IID partitioning uses the shard-based scheme described in the paper (100 label-sorted shards distributed unevenly across K = 5 edge nodes).
 
 ## Datasets
 
