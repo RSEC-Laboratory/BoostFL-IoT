@@ -15,7 +15,7 @@ BoostFL-IoT/
 │   ├── iid/                    IID experiments (BoT-IoT, UNSW-NB15)
 │   ├── noniid/                 Non-IID comparison (BoostFL-IoT vs CIDIoT)
 │   ├── ablation/               Component ablation study
-│   ├── robustness/             Label-flipping robustness (IID and Non-IID)
+│   ├── robustness/             Label-flipping / Noise robustness (IID and Non-IID)
 │   └── scalability/            Accuracy vs number of edge nodes
 ├── requirements.txt
 └── README.md
@@ -65,9 +65,9 @@ Detection Rate (DR) and False Alarm Rate (FAR), averaged over three seeds. The B
 | --- | --- |
 | `notebooks/ablation/BoostFL_Ablation_BoT-IoT.ipynb` | Full model vs no-residual-learning vs FedAvg-aggregation, under a severe Non-IID split (Dirichlet alpha = 0.08) on BoT-IoT |
 
-### Robustness to label-flipping
+### Robustness to label-flipping / Noise
 
-Each notebook sweeps the fraction of malicious (label-flipping) clients for one method.
+Each notebook sweeps the fraction of malicious (label-flipping / Noise) clients for one method.
 
 
 - `Binary = True` reproduces the binary robustness results.
@@ -81,14 +81,25 @@ Each notebook sweeps the fraction of malicious (label-flipping) clients for one 
 
 | Notebook | Method |
 | --- | --- |
-| `notebooks/robustness/noniid/BoostFL_BoT-IoT03.ipynb` | BoostFL-IoT |
-| `notebooks/robustness/noniid/BoostFL_BoT-IoT05.ipynb` | BoostFL-IoT |
-| `notebooks/robustness/noniid/FedAvg_BoT-IoT03.ipynb` | FedAvg |
-| `notebooks/robustness/noniid/FedAvg_BoT-IoT05.ipynb` | FedAvg |
-| `notebooks/robustness/noniid/FedProx_BoT-IoT03.ipynb` | FedProx |
-| `notebooks/robustness/noniid/FedProx_BoT-IoT05.ipynb` | FedProx |
-| `notebooks/robustness/noniid/FedMut_BoT-IoT03.ipynb` | FedMut |
-| `notebooks/robustness/noniid/FedMut_BoT-IoT05.ipynb` | FedMut |
+| `notebooks/robustness/noniid/LF/BoostFL_BoT-IoT03.ipynb` | BoostFL-IoT |
+| `notebooks/robustness/noniid/LF/BoostFL_BoT-IoT05.ipynb` | BoostFL-IoT |
+| `notebooks/robustness/noniid/LF/FedAvg_BoT-IoT03.ipynb` | FedAvg |
+| `notebooks/robustness/noniid/LF/FedAvg_BoT-IoT05.ipynb` | FedAvg |
+| `notebooks/robustness/noniid/LF/FedProx_BoT-IoT03.ipynb` | FedProx |
+| `notebooks/robustness/noniid/LF/FedProx_BoT-IoT05.ipynb` | FedProx |
+| `notebooks/robustness/noniid/LF/FedMut_BoT-IoT03.ipynb` | FedMut |
+| `notebooks/robustness/noniid/LF/FedMut_BoT-IoT05.ipynb` | FedMut |
+
+| Notebook | Method |
+| --- | --- |
+| `notebooks/robustness/noniid/Noise/BoostFL_BoT-IoT03_noise.ipynb` | BoostFL-IoT |
+| `notebooks/robustness/noniid/Noise/BoostFL_BoT-IoT05_noise.ipynb` | BoostFL-IoT |
+| `notebooks/robustness/noniid/Noise/FedAvg_BoT-IoT03_noise.ipynb` | FedAvg |
+| `notebooks/robustness/noniid/Noise/FedAvg_BoT-IoT05_noise.ipynb` | FedAvg |
+| `notebooks/robustness/noniid/Noise/FedProx_BoT-IoT03_noise.ipynb` | FedProx |
+| `notebooks/robustness/noniid/Noise/FedProx_BoT-IoT05_noise.ipynb` | FedProx |
+| `notebooks/robustness/noniid/Noise/FedMut_BoT-IoT03_noise.ipynb` | FedMut |
+| `notebooks/robustness/noniid/Noise/FedMut_BoT-IoT05_noise.ipynb` | FedMut |
 
 ### Scalability
 

@@ -1,0 +1,7 @@
+,Mean,Std
+Accuracy,0.914796,0.010568
+Precision,0.874616,0.01387
+Recall,0.884826,0.012581
+F1 Score,0.869737,0.009149
+Detection Rate,0.997332,0.000648
+False Alarm Rate,0.00321,0.000761

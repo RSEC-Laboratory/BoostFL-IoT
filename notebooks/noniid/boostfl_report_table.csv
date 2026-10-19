@@ -1,0 +1,7 @@
+,BoostFL (mean +/- std)
+Accuracy,0.9148 +/- 0.0106
+Precision,0.8746 +/- 0.0139
+Recall,0.8848 +/- 0.0126
+F1 Score,0.8697 +/- 0.0091
+Detection Rate,0.9973 +/- 0.0006
+False Alarm Rate,0.0032 +/- 0.0008
